@@ -46,9 +46,9 @@ function add_custom_cart_button_styles() {
 .product-block.grid .add-cart > .button {
     border-radius: 5px !important;
     -webkit-border-radius: 5px !important;
-    -moz-border-radius: 50% !important;
-    -ms-border-radius: 50% !important;
-    -o-border-radius: 50% !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
     overflow: hidden !important;
     line-height: 20px !important;
     border: 1px solid #e3e3e3 !important;
