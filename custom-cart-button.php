@@ -16,7 +16,7 @@ function add_custom_cart_button_styles() {
     <style>
    
 
-/* main design */
+/* new design */
 .product-block.grid .title-wrapper {
     width: 100% !important;
 }
@@ -37,7 +37,7 @@ function add_custom_cart_button_styles() {
 
 @media (max-width: 1024px) {
     .product-block.grid .add-cart {
-        padding: 2px;
+        padding: 2px !important;
         position: inherit !important;
     }
 }
@@ -46,32 +46,32 @@ function add_custom_cart_button_styles() {
 .product-block.grid .add-cart > .button {
     border-radius: 5px !important;
     -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    -ms-border-radius: 5px !important;
-    -o-border-radius: 5px !important;
-    overflow: hidden;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    overflow: hidden !important;
     line-height: 20px !important;
-    border: 1px solid #e3e3e3;
-    color: #282828;
-    background-color: #20533b00;
+    border: 1px solid #e3e3e3 !important;
+    color: #282828 !important;
+    background-color: #20533b00 !important;
     font-size: 12px !important;
-    font-weight: 500;
-    position: relative;
-    display: flex;
+    font-weight: 500 !important;
+    position: relative !important;
+    display: flex !important;
     width: 100% !important;
     text-align: left !important;
-    height: auto;
-    padding: 4px 10px;
-    transition: all 0.3s ease-in-out 0s;
-    box-shadow: 0 3px 7px 0 rgba(91, 91, 91, 0.1);
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    height: auto !important;
+    padding: 4px 10px !important;
+    transition: all 0.3s ease-in-out 0s !important;
+    box-shadow: 0 3px 7px 0 rgba(91, 91, 91, 0.1) !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 10px !important;
 }
 
 .product-block.grid .add-cart > .added_to_cart,
 .product-block.grid .add-cart > .button:hover {
-    background-color: #20533b11;
+    background-color: #20533b11 !important;
 }
 
 .product-block.grid .add-cart > .added_to_cart:not(.loading)::before,
@@ -108,6 +108,7 @@ function add_custom_cart_button_styles() {
         font-size: 13px !important;
     }
 }
+
        
    </style>
    <?php
