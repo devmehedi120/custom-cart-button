@@ -127,6 +127,9 @@ media (max-width: 1024px){
     align-items: center;
     margin-top: 10px;
 }
+.product-block.grid .add-cart > .added_to_cart, .product-block.grid .add-cart > .button:hover{
+    background-color: #20533b11;
+}
 
 .product-block.grid .add-cart > .added_to_cart:not(.loading)::before, .product-block.grid .add-cart > .button:not(.loading)::before {
     width: 25px;
