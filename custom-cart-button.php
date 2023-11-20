@@ -46,9 +46,9 @@ function add_custom_cart_button_styles() {
 .product-block.grid .add-cart > .button {
     border-radius: 5px !important;
     -webkit-border-radius: 5px !important;
-    -moz-border-radius: 50% !important;
-    -ms-border-radius: 50% !important;
-    -o-border-radius: 50% !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
     overflow: hidden;
     line-height: 20px !important;
     border: 1px solid #e3e3e3;
@@ -76,22 +76,22 @@ function add_custom_cart_button_styles() {
 
 .product-block.grid .add-cart > .added_to_cart:not(.loading)::before,
 .product-block.grid .add-cart > .button:not(.loading)::before {
-    width: 25px;
-    height: 22px;
-    transition: all 0.3s ease-in-out 0s;
-    font-family: "bfres";
-    content: "\e915";
-    color: #333;
-    position: initial;
-    top: 0;
-    left: 0;
-    right: -7px;
-    z-index: 2;
-    font-size: 16px;
-    border-right: 0 solid transparent;
-    border-bottom: 0 solid #20533b;
-    transform: translateX(0);
-    text-align: right;
+    width: 25px !important;
+    height: 22px !important;
+    transition: all 0.3s ease-in-out 0s !important;
+    font-family: "bfres" !important;
+    content: "\e915" !important;
+    color: #333 !important;
+    position: initial !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: -7px !important;
+    z-index: 2 !important;
+    font-size: 16px !important;
+    border-right: 0 solid transparent !important;
+    border-bottom: 0 solid #20533b !important;
+    transform: translateX(0) !important;
+    text-align: right !important;
 }
 
 @media (max-width: 767px) {
@@ -108,7 +108,6 @@ function add_custom_cart_button_styles() {
         font-size: 13px !important;
     }
 }
-
        
    </style>
    <?php
