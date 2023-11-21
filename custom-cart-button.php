@@ -33,6 +33,13 @@ function add_custom_cart_button_styles() {
     .product-block.grid .title-wrapper {
         display: inline-block !important;
     }
+    .product-block.grid .add-cart > .added_to_cart,
+.product-block.grid .add-cart > .button {
+    justify-content:center !important;
+    font-size:15px;
+    font-weight:700 !important;
+    
+}
 }
 
 @media (max-width: 1024px) {
@@ -68,12 +75,19 @@ function add_custom_cart_button_styles() {
     align-items: center !important;
     margin-top: 10px !important;
 }
-
+.product-block.grid .add-cart > .button:hover::before{
+    color:#fff;
+}
 .product-block.grid .add-cart > .added_to_cart,
 .product-block.grid .add-cart > .button:hover {
-    background-color: #20533b11 !important;
+    background-color: #20533b !important;
+    color:#ffff !important;
 }
-
+.product-block.grid .add-cart > .added_to_cart:not(.loading)::before, .product-block.grid .add-cart > .button:not(.loading)::before {
+   
+    color: #fff !important;
+   
+}
 .product-block.grid .add-cart > .added_to_cart:not(.loading)::before,
 .product-block.grid .add-cart > .button:not(.loading)::before {
     width: 25px !important;
