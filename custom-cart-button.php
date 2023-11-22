@@ -2,7 +2,7 @@
 /*
 Plugin Name: Custom Cart Button
 Description: Custom styles for the WooCommerce cart button.
-Version: 1.1.3
+Version: 1.2
 Author: Mehedi Hasan
 Author URI: https://www.fiverr.com/wpdevmehedi?public_mode=true
 Text Domain: custom-cart-button
@@ -158,7 +158,7 @@ function add_custom_cart_button_styles() {
     padding: 20px;
     border-bottom: 1px solid #e3e3e3;
 }
-#add_payment_method table.cart td.actions .coupon, .woocommerce-cart table.cart td.actions .coupon, .woocommerce-checkout table.cart td.actions .coupon {
+ .woocommerce-checkout table.cart td.actions .coupon {
     border: 0;
     border-radius: unset;
     -webkit-border-radius: unset;
@@ -166,15 +166,114 @@ function add_custom_cart_button_styles() {
     -ms-border-radius: unset;
     -o-border-radius: unset;
 }
-
 #add_payment_method table.cart td.actions .coupon .input-text, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text {
+    border-color: #e3e3e3 !important;
+}
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+   
+    margin-right: 0px !important;
+   
+}
+ .woocommerce-checkout table.cart td.actions .coupon .input-text {
     border: 1px solid #cfc8d8;
     margin-right:0 !important;
 }
+	.woocommerce-checkout table.cart td.actions{
+    display:block !important:
 }
 
-.goal-footer-mobile > ul {
-       display: flex;
+ .woocommerce-cart table.cart td.actions .coupon, .woocommerce-checkout table.cart td.actions .coupon {
+    border: none;
+  
+}
+.woocommerce-cart table.cart td.actions .coupon label,
+{
+    font-size:20px;
+}
+
+.woocommerce table.shop_table td {
+    padding: 2px 5px;
+    }
+
+   .woocommerce-page .quantity .minus {
+       left: 0px !important;
+}
+.woocommerce table.shop_table td {
+    border: none;
+    border-top: 1px solid #e3e3e3;
+    overflow: hidden;
+    padding: 10px 0;
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+	.woocommerce table.shop_table_responsive tr, .woocommerce-page table.shop_table_responsive tr {
+         display: flex;
+		flex-direction: column;
+}
+	
+.woocommerce .quantity, .woocommerce-page .quantity {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    left: 0;
+    margin-right: 125px;
+}
+.woocommerce .quantity .plus, .woocommerce .quantity .minus, .woocommerce-page .quantity .plus, .woocommerce-page .quantity .minus {
+    height: 100%;
+    border-color: #e3e3e3;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    width: 25%;
+}
+.woocommerce .quantity .plus, .woocommerce-page .quantity .plus {
+    top: 0;
+    right: 0;
+    border-radius:0px;
+    height: 100%;
+    border: 1px solid #e3e3e3 !important;
+}
+.woocommerce .quantity input.qty {
+    width: 50%;
+    font-size: 14px;
+    height: auto;
+    border: 1px solid #e3e3e3;
+    padding: 8px 7px;
+    font-weight: 500;
+    color: #656565;
+	text-align:center;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.woocommerce .quantity .minus, .woocommerce-page .quantity .minus {
+    bottom: unset !important;
+    right: unset !important;
+    border-top: 1px solid #e3e3e3 !important;
+   
+}
+.woocommerce .quantity, .woocommerce-page .quantity {
+   padding-right: 0em !important;
+   
+}
+	.goal-footer-mobile > ul {
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -190,15 +289,30 @@ function add_custom_cart_button_styles() {
 .sliding-menu .sliding-menu__back::before {
     transform: rotate(-2deg);
 }
+
+	 .woocommerce-page table.cart td.actions {
+    display: block !important;
+}
+	.woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+    display: flex;
+    text-align: right!important;
+}
+}
+.goal-checkout-step ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .woocommerce table.shop_table th {
     text-align: right !important;
 }
+		
 
  div.cart_totals_inner > table > tbody > tr.cart-subtotal > td,
  div.cart_totals_inner > table > tbody > tr.order-total > td
  {
     text-align:  left ;
  }
+		
  
    </style>
    <?php
