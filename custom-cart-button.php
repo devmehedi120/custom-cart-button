@@ -2,7 +2,7 @@
 /*
 Plugin Name: Custom Cart Button
 Description: Custom styles for the WooCommerce cart button.
-Version: 1.2
+Version: 1.2.1
 Author: Mehedi Hasan
 Author URI: https://www.fiverr.com/wpdevmehedi?public_mode=true
 Text Domain: custom-cart-button
